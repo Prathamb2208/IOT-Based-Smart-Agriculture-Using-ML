@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!-- templates/error.html -->
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Error</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #7feb7f; /* Light green background */
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+            background-color: #cdc7c7ad;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(45, 43, 43, 0.485);
+            max-width: 500px;
+            width: 100%;
+            margin: 20px;
+        }
+        h1 {
+            color: #ff0000; /* Red color for error */
+            margin-bottom: 20px;
+        }
+        p {
+            color: #000000;
+            font-size: 18px;
+        }
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #ffffff;
+            background-color: #28a745;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        a:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Error</h1>
+        <p>Sorry... Error in entered values in the form. Please check the values and fill it again.</p>
+        <a href="/predict">Go Back to Form</a>
+    </div>
+</body>
+</html>

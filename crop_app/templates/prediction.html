@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IoT Smart Agriculture Using ML - Crop Prediction</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='style/prediction_css.css')}}">
+</head>
+<body>
+    <div class="container">
+        <div class="navigation-buttons">
+            <a href="/" class="home-button">Home</a>
+        </div>
+        <h4>According to your soil nutrients,</h4>
+        <h4>it is recommended that you should grow:</h4>
+        <div class="crop-name">{{prediction}}</div>
+        <div class="navigation-buttons">
+            <a href="/predict" class="predict-again-button">Predict Again</a>
+        </div>
+    </div>
+</body>
+</html>

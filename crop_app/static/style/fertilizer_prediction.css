@@ -1,0 +1,65 @@
+/* fertilizer_prediction.css */
+
+body {
+    background-image: url('fertilizer_back.jpg');
+    /* Change the background image URL as needed */
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Arial', sans-serif;
+    color: white;
+    text-shadow: 2px 2px #333;
+}
+
+.container {
+    text-align: center;
+}
+
+h4 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.crop-name {
+    font-size: 24px;
+    /* Adjust font size */
+    max-width: 80%;
+    /* Limit maximum width */
+    margin: 0 auto;
+    /* Center horizontally */
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.navigation-buttons {
+    margin-top: 20px;
+}
+
+.navigation-buttons a {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: #000000;
+    /* Adjusted button color */
+    color: rgb(251, 243, 243);
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.navigation-buttons a:hover {
+    background-color: #506251;
+    /* Adjusted hover color */
+}
+
+.home-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}

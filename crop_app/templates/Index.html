@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crop Prediction</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='style/crop1.css')}}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">   
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/predict">Crop Prediction</a></li>
+                <li><a href="/fertilizer">Fertilizer Recommendation</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Crop Prediction Form</h2>
+        <form method="POST" action="/form1">
+            <div class="form-group">
+                <label for="Nitrogen">Nitrogen</label>
+                <input type="number" id="Nitrogen" name="Nitrogen" required>
+            </div>
+            <div class="form-group">
+                <label for="Phosphorus">Phosphorus</label>
+                <input type="number" id="Phosphorus" name="Phosphorus" required>
+            </div>
+            <div class="form-group">
+                <label for="Potassium">Potassium</label>
+                <input type="number" id="Potassium" name="Potassium" required>
+            </div>
+            <div class="form-group">
+                <label for="Temperature">Temperature</label>
+                <input type="number" id="Temperature" name="Temperature" required>
+            </div>
+            <div class="form-group">
+                <label for="Humidity">Humidity</label>
+                <input type="number" id="Humidity" name="Humidity" required>
+            </div>
+            <div class="form-group">
+                <label for="ph">pH</label>
+                <input type="number" id="ph" name="ph" required>
+            </div>
+            <div class="form-group">
+                <label for="Rainfall">Rainfall</label>
+                <input type="number" id="Rainfall" name="Rainfall" required>
+            </div>
+            <button type="submit" class="btn">Predict</button>
+        </form>
+    </main>
+</body>
+</html>

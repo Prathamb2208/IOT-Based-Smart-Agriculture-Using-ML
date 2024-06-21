@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fertilizer Recommendation</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='style/fertilizer1.css')}}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/predict">Crop Prediction</a></li>
+                <li><a href="/fertilizer">Fertilizer Recommendation</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Fertilizer Recommendation</h2>
+        <form method="POST" action="{{ url_for('fert_recommend') }}">
+            <div class="form-group">
+                <label for="Nitrogen">Nitrogen (N)</label>
+                <input type="number" id="Nitrogen" name="nitrogen" required>
+            </div>
+            <div class="form-group">
+                <label for="Phosphorous">Phosphorous (P)</label>
+                <input type="number" id="Phosphorous" name="phosphorous" required>
+            </div>
+            <div class="form-group">
+                <label for="Pottasium">Potassium (K)</label>
+                <input type="number" id="Pottasium" name="pottasium" required>
+            </div>
+            <div class="form-group">
+                <label for="crop">Crop</label>
+                <select name="cropname" id="crop" required>
+                    <option selected>Select crop</option>
+                    <option>rice</option>
+                    <option>maize</option>
+                    <option>chickpea</option>
+                    <option>kidneybeans</option>
+                    <option>pigeonpeas</option>
+                    <option>mothbeans</option>
+                    <option>mungbean</option>
+                    <option>blackgram</option>
+                    <option>lentil</option>
+                    <option>pomegranate</option>
+                    <option>banana</option>
+                    <option>mango</option>
+                    <option>grapes</option>
+                    <option>watermelon</option>
+                    <option>muskmelon</option>
+                    <option>apple</option>
+                    <option>orange</option>
+                    <option>papaya</option>
+                    <option>coconut</option>
+                    <option>cotton</option>
+                    <option>jute</option>
+                    <option>coffee</option>
+                </select>
+            </div>
+            <button type="submit" class="btn">Predict</button>
+        </form>
+    </main>
+</body>
+</html>
